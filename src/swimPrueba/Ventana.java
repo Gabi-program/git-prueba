@@ -123,6 +123,7 @@ public class Ventana extends JFrame {
 			}
 			else {
 				lblNombreDeUsuario.setVisible(true);
+				System.out.println("Hola");
 			}
 			}
 		});
