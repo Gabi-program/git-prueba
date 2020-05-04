@@ -112,12 +112,18 @@ public class Ventana extends JFrame {
 		JButton btnNewButton = new JButton("Ingresar");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				if(Llamada.user.validarUsuario(textField.getText(),textField_1.getText())) {
+			if ((textField.getText().isEmpty()==false) && (textField_1.getText().isEmpty()==false)) {	
+				if(Llamada.user.validarUsuario(textField.getText(),textField_1.getText())
+						) {
 					dispose();
 					Bienvenida.main(null);
 				}else {
 					lblNombreDeUsuario.setVisible(true);
 				}
+			}
+			else {
+				lblNombreDeUsuario.setVisible(true);
+			}
 			}
 		});
 		btnNewButton.setBounds(181, 154, 109, 23);
