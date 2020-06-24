@@ -61,6 +61,7 @@ public class Bienvenida extends JFrame {
 		lblApellido.setFont(new Font("Times New Roman", Font.BOLD, 29));
 		lblApellido.setBounds(295, 22, 190, 44);
 		contentPane.add(lblApellido);
+	    System.out.println("holaaa");
 		}
 
 }
